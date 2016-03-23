@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3D32573C1CA33D0D004A2A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */; };
-		3D32573E1CA33D0D004A2A29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D32573D1CA33D0D004A2A29 /* ViewController.swift */; };
-		3D3257411CA33D0D004A2A29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D32573F1CA33D0D004A2A29 /* Main.storyboard */; };
 		3D3257431CA33D0D004A2A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3257421CA33D0D004A2A29 /* Assets.xcassets */; };
 		3D3257461CA33D0D004A2A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3257441CA33D0D004A2A29 /* LaunchScreen.storyboard */; };
 		3D3257511CA33D0D004A2A29 /* DynamicsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3257501CA33D0D004A2A29 /* DynamicsDemoTests.swift */; };
 		3D32575C1CA33D0D004A2A29 /* DynamicsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D32575B1CA33D0D004A2A29 /* DynamicsDemoUITests.swift */; };
+		3D32576B1CA33D6A004A2A29 /* PhysicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3257691CA33D6A004A2A29 /* PhysicsViewController.swift */; };
+		3D32576C1CA33D6A004A2A29 /* PhysicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D32576A1CA33D6A004A2A29 /* PhysicsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +36,6 @@
 /* Begin PBXFileReference section */
 		3D3257381CA33D0D004A2A29 /* DynamicsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D32573D1CA33D0D004A2A29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D3257401CA33D0D004A2A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D3257421CA33D0D004A2A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3257451CA33D0D004A2A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3257471CA33D0D004A2A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +45,8 @@
 		3D3257571CA33D0D004A2A29 /* DynamicsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32575B1CA33D0D004A2A29 /* DynamicsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicsDemoUITests.swift; sourceTree = "<group>"; };
 		3D32575D1CA33D0D004A2A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D3257691CA33D6A004A2A29 /* PhysicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsViewController.swift; sourceTree = "<group>"; };
+		3D32576A1CA33D6A004A2A29 /* PhysicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhysicsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */,
-				3D32573D1CA33D0D004A2A29 /* ViewController.swift */,
-				3D32573F1CA33D0D004A2A29 /* Main.storyboard */,
+				3D3257691CA33D6A004A2A29 /* PhysicsViewController.swift */,
+				3D32576A1CA33D6A004A2A29 /* PhysicsViewController.xib */,
 				3D3257421CA33D0D004A2A29 /* Assets.xcassets */,
 				3D3257441CA33D0D004A2A29 /* LaunchScreen.storyboard */,
 				3D3257471CA33D0D004A2A29 /* Info.plist */,
@@ -229,9 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D32576C1CA33D6A004A2A29 /* PhysicsViewController.xib in Resources */,
 				3D3257461CA33D0D004A2A29 /* LaunchScreen.storyboard in Resources */,
 				3D3257431CA33D0D004A2A29 /* Assets.xcassets in Resources */,
-				3D3257411CA33D0D004A2A29 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D32573E1CA33D0D004A2A29 /* ViewController.swift in Sources */,
+				3D32576B1CA33D6A004A2A29 /* PhysicsViewController.swift in Sources */,
 				3D32573C1CA33D0D004A2A29 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,14 +293,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3D32573F1CA33D0D004A2A29 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D3257401CA33D0D004A2A29 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D3257441CA33D0D004A2A29 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -405,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -416,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -484,6 +478,7 @@
 				3D3257621CA33D0D004A2A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D3257631CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +487,7 @@
 				3D3257651CA33D0D004A2A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D3257661CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +496,7 @@
 				3D3257681CA33D0D004A2A29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
