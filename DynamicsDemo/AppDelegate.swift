@@ -18,13 +18,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: frame)
         window?.makeKeyAndVisible()
         
-        setRootViewController(PhysicsViewController())
+        setRootViewController(LogInViewController())
         
         return true
     }
     
     private func setRootViewController(rootVC: UIViewController) {
-        window?.rootViewController = UINavigationController(rootViewController: rootVC)
+        window?.rootViewController = rootVC
     }
 }
 

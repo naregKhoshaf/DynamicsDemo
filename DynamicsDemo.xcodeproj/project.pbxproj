@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D30C6C21CA423A7001A8392 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30C6C01CA423A7001A8392 /* UserProfileViewController.swift */; };
+		3D30C6C31CA423A7001A8392 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D30C6C11CA423A7001A8392 /* UserProfileViewController.xib */; };
+		3D30C6C61CA4245F001A8392 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D30C6C41CA4245F001A8392 /* LogInViewController.swift */; };
+		3D30C6C71CA4245F001A8392 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D30C6C51CA4245F001A8392 /* LogInViewController.xib */; };
 		3D32573C1CA33D0D004A2A29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */; };
 		3D3257431CA33D0D004A2A29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3257421CA33D0D004A2A29 /* Assets.xcassets */; };
 		3D3257461CA33D0D004A2A29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3257441CA33D0D004A2A29 /* LaunchScreen.storyboard */; };
 		3D3257511CA33D0D004A2A29 /* DynamicsDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3257501CA33D0D004A2A29 /* DynamicsDemoTests.swift */; };
 		3D32575C1CA33D0D004A2A29 /* DynamicsDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D32575B1CA33D0D004A2A29 /* DynamicsDemoUITests.swift */; };
-		3D32576B1CA33D6A004A2A29 /* PhysicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3257691CA33D6A004A2A29 /* PhysicsViewController.swift */; };
-		3D32576C1CA33D6A004A2A29 /* PhysicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D32576A1CA33D6A004A2A29 /* PhysicsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D30C6C01CA423A7001A8392 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		3D30C6C11CA423A7001A8392 /* UserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		3D30C6C41CA4245F001A8392 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		3D30C6C51CA4245F001A8392 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
 		3D3257381CA33D0D004A2A29 /* DynamicsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3257421CA33D0D004A2A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,8 +51,6 @@
 		3D3257571CA33D0D004A2A29 /* DynamicsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32575B1CA33D0D004A2A29 /* DynamicsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicsDemoUITests.swift; sourceTree = "<group>"; };
 		3D32575D1CA33D0D004A2A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D3257691CA33D6A004A2A29 /* PhysicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhysicsViewController.swift; sourceTree = "<group>"; };
-		3D32576A1CA33D6A004A2A29 /* PhysicsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhysicsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */,
-				3D3257691CA33D6A004A2A29 /* PhysicsViewController.swift */,
-				3D32576A1CA33D6A004A2A29 /* PhysicsViewController.xib */,
+				3D30C6C41CA4245F001A8392 /* LogInViewController.swift */,
+				3D30C6C51CA4245F001A8392 /* LogInViewController.xib */,
+				3D30C6C01CA423A7001A8392 /* UserProfileViewController.swift */,
+				3D30C6C11CA423A7001A8392 /* UserProfileViewController.xib */,
 				3D3257421CA33D0D004A2A29 /* Assets.xcassets */,
 				3D3257441CA33D0D004A2A29 /* LaunchScreen.storyboard */,
 				3D3257471CA33D0D004A2A29 /* Info.plist */,
@@ -229,7 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D32576C1CA33D6A004A2A29 /* PhysicsViewController.xib in Resources */,
+				3D30C6C71CA4245F001A8392 /* LogInViewController.xib in Resources */,
+				3D30C6C31CA423A7001A8392 /* UserProfileViewController.xib in Resources */,
 				3D3257461CA33D0D004A2A29 /* LaunchScreen.storyboard in Resources */,
 				3D3257431CA33D0D004A2A29 /* Assets.xcassets in Resources */,
 			);
@@ -256,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D32576B1CA33D6A004A2A29 /* PhysicsViewController.swift in Sources */,
+				3D30C6C21CA423A7001A8392 /* UserProfileViewController.swift in Sources */,
 				3D32573C1CA33D0D004A2A29 /* AppDelegate.swift in Sources */,
+				3D30C6C61CA4245F001A8392 /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
