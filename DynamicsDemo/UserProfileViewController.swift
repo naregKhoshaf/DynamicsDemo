@@ -10,12 +10,16 @@ import UIKit
 
 class UserProfileViewController: UIViewController {
 
+    @IBAction func logOutButtonPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
     }
     
     private func setup() {
-    
+        
     }
+    
 }
