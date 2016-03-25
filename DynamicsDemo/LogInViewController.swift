@@ -35,16 +35,16 @@ class CustomDismissAnimationController: NSObject, UIViewControllerAnimatedTransi
         let finalFrameForVC = transitionContext.finalFrameForViewController(toViewController)
         // This holds the to/from controllers
         let containerView = transitionContext.containerView()
-        containerView?.backgroundColor = UIColor.blueColor()
+        containerView?.backgroundColor = UIColor.blackColor()
         // We position the toView just below the bottom of the screen.
         let bounds = UIScreen.mainScreen().bounds
-        toViewController.view.frame = CGRectOffset(finalFrameForVC, 0, bounds.size.height - 50)
+        toViewController.view.frame = CGRectOffset(finalFrameForVC, 0, bounds.size.height)
         containerView!.addSubview(toViewController.view)
-        
+
         // The transition used here is the same as the one defined above.
         UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: .CurveLinear, animations: {
-            fromViewController.view.alpha = 0.0
-            toViewController.view.frame = CGRect(x: 0, y: 50, width: bounds.size.width, height: bounds.size.height + 200 )
+            fromViewController.view.alpha = 0
+            toViewController.view.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height + 200 )
             }, completion: {
                 finished in
                 transitionContext.completeTransition(true)
@@ -55,13 +55,9 @@ class CustomDismissAnimationController: NSObject, UIViewControllerAnimatedTransi
 
 class LogInViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
-    let logInViewController = CustomDismissAnimationController()
+    let customDismissAnimation = CustomDismissAnimationController()
 
-    @IBAction func logInButtonPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-        loggedIn = true
-    }
-
+// STEP TWO:
     private func setup() {
         self.transitioningDelegate = self
     }
@@ -70,9 +66,14 @@ class LogInViewController: UIViewController, UIViewControllerTransitioningDelega
         super.viewDidLoad()
         setup()
     }
-    
+// STEP THREE:
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return logInViewController
+        return customDismissAnimation
+    }
+    
+    @IBAction func logInButtonPressed(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        loggedIn = true
     }
 }
 

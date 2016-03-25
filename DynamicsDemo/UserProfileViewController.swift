@@ -12,10 +12,7 @@ var loggedIn = false
 
 class UserProfileViewController: UIViewController {
     
-    
-    @IBAction func logOutButtonPressed(sender: AnyObject) {
-        self.presentViewController(LogInViewController(), animated: true, completion: nil)
-    }
+    @IBOutlet weak var animationView: UIView!
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -24,7 +21,11 @@ class UserProfileViewController: UIViewController {
 
     private func viewDidAppearSetup() {
         if !loggedIn {
-            self.presentViewController(LogInViewController(), animated: true, completion: nil)
+            self.presentViewController(LogInViewController(), animated: false, completion: nil)
         }
+    }
+    
+    @IBAction func logOutButtonPressed(sender: AnyObject) {
+        self.presentViewController(LogInViewController(), animated: true, completion: nil)
     }
 }
