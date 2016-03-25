@@ -22,7 +22,7 @@ import UIKit
 // UIViewControllerAnimatedTransitioning PROTOCOL has 2 required methods:
 // 1. transitionDuration()
 // 2. animateTransition()
-class CustomPresentAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
+class CustomDismissAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     // 1. This required method specifies the length of the transition animation.
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 2.5
@@ -35,16 +35,16 @@ class CustomPresentAnimationController: NSObject, UIViewControllerAnimatedTransi
         let finalFrameForVC = transitionContext.finalFrameForViewController(toViewController)
         // This holds the to/from controllers
         let containerView = transitionContext.containerView()
-        containerView?.backgroundColor = UIColor.blueColor()
+        containerView?.backgroundColor = UIColor.blackColor()
         // We position the toView just below the bottom of the screen.
         let bounds = UIScreen.mainScreen().bounds
-        toViewController.view.frame = CGRectOffset(finalFrameForVC, 0, bounds.size.height - 50)
+        toViewController.view.frame = CGRectOffset(finalFrameForVC, 0, bounds.size.height)
         containerView!.addSubview(toViewController.view)
-        
+
         // The transition used here is the same as the one defined above.
         UIView.animateWithDuration(transitionDuration(transitionContext), delay: 0.0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.0, options: .CurveLinear, animations: {
-            fromViewController.view.alpha = 0.0
-            toViewController.view.frame = CGRect(x: 0, y: 50, width: bounds.size.width, height: bounds.size.height + 200 )
+            fromViewController.view.alpha = 0
+            toViewController.view.frame = CGRect(x: 0, y: 0, width: bounds.size.width, height: bounds.size.height + 200 )
             }, completion: {
                 finished in
                 transitionContext.completeTransition(true)
@@ -53,11 +53,27 @@ class CustomPresentAnimationController: NSObject, UIViewControllerAnimatedTransi
     }
 }
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UIViewControllerTransitioningDelegate {
+    
+    let customDismissAnimation = CustomDismissAnimationController()
+
+// STEP TWO:
+    private func setup() {
+        self.transitioningDelegate = self
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+// STEP THREE:
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return customDismissAnimation
+    }
     
     @IBAction func logInButtonPressed(sender: AnyObject) {
-        self.presentViewController(UserProfileViewController(), animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
+        loggedIn = true
     }
-
 }
 

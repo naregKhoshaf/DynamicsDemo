@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: frame)
         window?.makeKeyAndVisible()
         
-        setRootViewController(LogInViewController())
+        setRootViewController(UserProfileViewController())
         
         return true
     }

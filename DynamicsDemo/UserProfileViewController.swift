@@ -8,24 +8,24 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController, UIViewControllerTransitioningDelegate {
+var loggedIn = false
+
+class UserProfileViewController: UIViewController {
     
-    let logInViewController = CustomPresentAnimationController()
+    @IBOutlet weak var animationView: UIView!
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        viewDidAppearSetup()
+    }
+
+    private func viewDidAppearSetup() {
+        if !loggedIn {
+            self.presentViewController(LogInViewController(), animated: false, completion: nil)
+        }
+    }
     
     @IBAction func logOutButtonPressed(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil)
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setup()
-    }
-    
-    private func setup() {
-        self.transitioningDelegate = self
-    }
-    
-    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return logInViewController
+        self.presentViewController(LogInViewController(), animated: true, completion: nil)
     }
 }
