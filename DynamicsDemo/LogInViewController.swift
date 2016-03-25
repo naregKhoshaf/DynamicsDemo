@@ -22,7 +22,7 @@ import UIKit
 // UIViewControllerAnimatedTransitioning PROTOCOL has 2 required methods:
 // 1. transitionDuration()
 // 2. animateTransition()
-class CustomPresentAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
+class CustomDismissAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     // 1. This required method specifies the length of the transition animation.
     func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
         return 2.5
@@ -53,11 +53,26 @@ class CustomPresentAnimationController: NSObject, UIViewControllerAnimatedTransi
     }
 }
 
-class LogInViewController: UIViewController {
+class LogInViewController: UIViewController, UIViewControllerTransitioningDelegate {
     
+    let logInViewController = CustomDismissAnimationController()
+
     @IBAction func logInButtonPressed(sender: AnyObject) {
-        self.presentViewController(UserProfileViewController(), animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
+        loggedIn = true
     }
 
+    private func setup() {
+        self.transitioningDelegate = self
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return logInViewController
+    }
 }
 

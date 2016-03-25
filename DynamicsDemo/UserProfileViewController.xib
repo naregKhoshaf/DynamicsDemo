@@ -16,8 +16,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-Sy-oI2">
-                    <rect key="frame" x="277" y="285" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
+                    <rect key="frame" x="260" y="285" width="81" height="30"/>
+                    <state key="normal" title="User Profile"/>
                     <connections>
                         <action selector="logOutButtonPressed:" destination="-1" eventType="touchUpInside" id="BWe-5v-es5"/>
                     </connections>
