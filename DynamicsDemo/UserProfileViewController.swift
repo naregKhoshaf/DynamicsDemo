@@ -8,22 +8,28 @@
 
 import UIKit
 
-var loggedIn = false
+var loggedIn = true
 
 class UserProfileViewController: UIViewController {
     
     @IBOutlet weak var animationView: UIView!
+    @IBOutlet weak var hamburgerMenuView: UIButton!
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-        viewDidAppearSetup()
-    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        hamburgerMenuView.transform = CGAffineTransformMakeScale(2, 2)
+        animationView.frame.size.height = UIScreen.mainScreen().bounds.height
 
-    private func viewDidAppearSetup() {
-        if !loggedIn {
-            self.presentViewController(LogInViewController(), animated: false, completion: nil)
-        }
+        UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0.66, initialSpringVelocity: 1, options: .CurveEaseInOut, animations: {
+            
+            self.hamburgerMenuView.transform = CGAffineTransformMakeScale(1, 1)
+            
+            self.animationView.frame.size.height = 50
+
+            }, completion: nil)
     }
+    
     
     @IBAction func logOutButtonPressed(sender: AnyObject) {
         self.presentViewController(LogInViewController(), animated: true, completion: nil)
