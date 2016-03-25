@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-Sy-oI2">
-                    <rect key="frame" x="506" y="8" width="46" height="30"/>
+                    <rect key="frame" x="277" y="285" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="logOutButtonPressed:" destination="-1" eventType="touchUpInside" id="BWe-5v-es5"/>
@@ -25,8 +25,8 @@
             </subviews>
             <color key="backgroundColor" red="0.0067950606769999998" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstItem="zCL-Sy-oI2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="8IB-e7-1AV"/>
-                <constraint firstAttribute="trailing" secondItem="zCL-Sy-oI2" secondAttribute="trailing" constant="48" id="nP2-lL-oHe"/>
+                <constraint firstItem="zCL-Sy-oI2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="JRA-uL-Sv2"/>
+                <constraint firstItem="zCL-Sy-oI2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hZb-E2-cNZ"/>
             </constraints>
         </view>
     </objects>

@@ -16,7 +16,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynL-Dx-mC7">
-                    <rect key="frame" x="277" y="515" width="46" height="30"/>
+                    <rect key="frame" x="277" y="285" width="46" height="30"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="logInButtonPressed:" destination="-1" eventType="touchUpInside" id="OqL-wS-gzb"/>
@@ -25,8 +25,8 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="ynL-Dx-mC7" secondAttribute="bottom" constant="55" id="FBE-qS-s74"/>
-                <constraint firstItem="ynL-Dx-mC7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pR0-mB-aZq"/>
+                <constraint firstItem="ynL-Dx-mC7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="F57-qD-JAq"/>
+                <constraint firstItem="ynL-Dx-mC7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tXp-Ya-9Zh"/>
             </constraints>
         </view>
     </objects>
