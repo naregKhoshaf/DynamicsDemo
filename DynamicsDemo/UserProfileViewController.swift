@@ -32,7 +32,7 @@ class UserProfileViewController: UIViewController {
         hamburgerMenuView.transform = CGAffineTransformMakeScale(2, 2)
         animationView.frame.size.height = UIScreen.mainScreen().bounds.height
 
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.4, initialSpringVelocity: 4, options: .CurveEaseOut, animations: {
+        UIView.animateWithDuration(2.5, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 4, options: .CurveEaseOut, animations: {
             
             self.hamburgerMenuView.transform = CGAffineTransformMakeScale(1, 1)
             self.animationView.frame.size.height = 10
