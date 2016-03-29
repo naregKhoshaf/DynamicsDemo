@@ -9,10 +9,6 @@
 import UIKit
 
 class LogInViewController: UIViewController {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 
     @IBAction func logInButtonPressed(sender: AnyObject) {
         self.dismissViewControllerAnimated(false, completion: nil)

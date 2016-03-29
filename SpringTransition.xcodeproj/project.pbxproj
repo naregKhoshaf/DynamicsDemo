@@ -40,15 +40,15 @@
 		3D30C6C11CA423A7001A8392 /* UserProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
 		3D30C6C41CA4245F001A8392 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		3D30C6C51CA4245F001A8392 /* LogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogInViewController.xib; sourceTree = "<group>"; };
-		3D3257381CA33D0D004A2A29 /* DynamicsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3257381CA33D0D004A2A29 /* SpringTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3257421CA33D0D004A2A29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D3257451CA33D0D004A2A29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3257471CA33D0D004A2A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D32574C1CA33D0D004A2A29 /* DynamicsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D32574C1CA33D0D004A2A29 /* SpringTransition.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpringTransition.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3257501CA33D0D004A2A29 /* DynamicsDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicsDemoTests.swift; sourceTree = "<group>"; };
 		3D3257521CA33D0D004A2A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D3257571CA33D0D004A2A29 /* DynamicsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3257571CA33D0D004A2A29 /* SpringTransition.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpringTransition.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D32575B1CA33D0D004A2A29 /* DynamicsDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicsDemoUITests.swift; sourceTree = "<group>"; };
 		3D32575D1CA33D0D004A2A29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,7 +81,7 @@
 		3D32572F1CA33D0D004A2A29 = {
 			isa = PBXGroup;
 			children = (
-				3D32573A1CA33D0D004A2A29 /* DynamicsDemo */,
+				3D32573A1CA33D0D004A2A29 /* SpringTransition */,
 				3D32574F1CA33D0D004A2A29 /* DynamicsDemoTests */,
 				3D32575A1CA33D0D004A2A29 /* DynamicsDemoUITests */,
 				3D3257391CA33D0D004A2A29 /* Products */,
@@ -91,14 +91,14 @@
 		3D3257391CA33D0D004A2A29 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3D3257381CA33D0D004A2A29 /* DynamicsDemo.app */,
-				3D32574C1CA33D0D004A2A29 /* DynamicsDemoTests.xctest */,
-				3D3257571CA33D0D004A2A29 /* DynamicsDemoUITests.xctest */,
+				3D3257381CA33D0D004A2A29 /* SpringTransition.app */,
+				3D32574C1CA33D0D004A2A29 /* SpringTransition.xctest */,
+				3D3257571CA33D0D004A2A29 /* SpringTransition.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3D32573A1CA33D0D004A2A29 /* DynamicsDemo */ = {
+		3D32573A1CA33D0D004A2A29 /* SpringTransition */ = {
 			isa = PBXGroup;
 			children = (
 				3D32573B1CA33D0D004A2A29 /* AppDelegate.swift */,
@@ -110,6 +110,7 @@
 				3D3257441CA33D0D004A2A29 /* LaunchScreen.storyboard */,
 				3D3257471CA33D0D004A2A29 /* Info.plist */,
 			);
+			name = SpringTransition;
 			path = DynamicsDemo;
 			sourceTree = "<group>";
 		};
@@ -134,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3D3257371CA33D0D004A2A29 /* DynamicsDemo */ = {
+		3D3257371CA33D0D004A2A29 /* SpringTransition */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D3257601CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemo" */;
+			buildConfigurationList = 3D3257601CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "SpringTransition" */;
 			buildPhases = (
 				3D3257341CA33D0D004A2A29 /* Sources */,
 				3D3257351CA33D0D004A2A29 /* Frameworks */,
@@ -146,14 +147,14 @@
 			);
 			dependencies = (
 			);
-			name = DynamicsDemo;
+			name = SpringTransition;
 			productName = DynamicsDemo;
-			productReference = 3D3257381CA33D0D004A2A29 /* DynamicsDemo.app */;
+			productReference = 3D3257381CA33D0D004A2A29 /* SpringTransition.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3D32574B1CA33D0D004A2A29 /* DynamicsDemoTests */ = {
+		3D32574B1CA33D0D004A2A29 /* SpringTransitionTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D3257631CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemoTests" */;
+			buildConfigurationList = 3D3257631CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "SpringTransitionTests" */;
 			buildPhases = (
 				3D3257481CA33D0D004A2A29 /* Sources */,
 				3D3257491CA33D0D004A2A29 /* Frameworks */,
@@ -164,14 +165,14 @@
 			dependencies = (
 				3D32574E1CA33D0D004A2A29 /* PBXTargetDependency */,
 			);
-			name = DynamicsDemoTests;
+			name = SpringTransitionTests;
 			productName = DynamicsDemoTests;
-			productReference = 3D32574C1CA33D0D004A2A29 /* DynamicsDemoTests.xctest */;
+			productReference = 3D32574C1CA33D0D004A2A29 /* SpringTransition.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		3D3257561CA33D0D004A2A29 /* DynamicsDemoUITests */ = {
+		3D3257561CA33D0D004A2A29 /* SpringTransitionUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3D3257661CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemoUITests" */;
+			buildConfigurationList = 3D3257661CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "SpringTransitionUITests" */;
 			buildPhases = (
 				3D3257531CA33D0D004A2A29 /* Sources */,
 				3D3257541CA33D0D004A2A29 /* Frameworks */,
@@ -182,9 +183,9 @@
 			dependencies = (
 				3D3257591CA33D0D004A2A29 /* PBXTargetDependency */,
 			);
-			name = DynamicsDemoUITests;
+			name = SpringTransitionUITests;
 			productName = DynamicsDemoUITests;
-			productReference = 3D3257571CA33D0D004A2A29 /* DynamicsDemoUITests.xctest */;
+			productReference = 3D3257571CA33D0D004A2A29 /* SpringTransition.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +211,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3D3257331CA33D0D004A2A29 /* Build configuration list for PBXProject "DynamicsDemo" */;
+			buildConfigurationList = 3D3257331CA33D0D004A2A29 /* Build configuration list for PBXProject "SpringTransition" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,9 +224,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3D3257371CA33D0D004A2A29 /* DynamicsDemo */,
-				3D32574B1CA33D0D004A2A29 /* DynamicsDemoTests */,
-				3D3257561CA33D0D004A2A29 /* DynamicsDemoUITests */,
+				3D3257371CA33D0D004A2A29 /* SpringTransition */,
+				3D32574B1CA33D0D004A2A29 /* SpringTransitionTests */,
+				3D3257561CA33D0D004A2A29 /* SpringTransitionUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -290,12 +291,12 @@
 /* Begin PBXTargetDependency section */
 		3D32574E1CA33D0D004A2A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D3257371CA33D0D004A2A29 /* DynamicsDemo */;
+			target = 3D3257371CA33D0D004A2A29 /* SpringTransition */;
 			targetProxy = 3D32574D1CA33D0D004A2A29 /* PBXContainerItemProxy */;
 		};
 		3D3257591CA33D0D004A2A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3D3257371CA33D0D004A2A29 /* DynamicsDemo */;
+			target = 3D3257371CA33D0D004A2A29 /* SpringTransition */;
 			targetProxy = 3D3257581CA33D0D004A2A29 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -403,8 +404,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DynamicsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.SpringTransition;
+				PRODUCT_NAME = SpringTransition;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -415,8 +416,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DynamicsDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemo;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.SpringTransition;
+				PRODUCT_NAME = SpringTransition;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -428,8 +429,8 @@
 				INFOPLIST_FILE = DynamicsDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicsDemo.app/DynamicsDemo";
+				PRODUCT_NAME = SpringTransition;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpringTransition.app/SpringTransition";
 			};
 			name = Debug;
 		};
@@ -440,8 +441,8 @@
 				INFOPLIST_FILE = DynamicsDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemoTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DynamicsDemo.app/DynamicsDemo";
+				PRODUCT_NAME = SpringTransition;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpringTransition.app/SpringTransition";
 			};
 			name = Release;
 		};
@@ -451,7 +452,7 @@
 				INFOPLIST_FILE = DynamicsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SpringTransition;
 				TEST_TARGET_NAME = DynamicsDemo;
 			};
 			name = Debug;
@@ -462,7 +463,7 @@
 				INFOPLIST_FILE = DynamicsDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.intrepid.DynamicsDemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SpringTransition;
 				TEST_TARGET_NAME = DynamicsDemo;
 			};
 			name = Release;
@@ -470,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3D3257331CA33D0D004A2A29 /* Build configuration list for PBXProject "DynamicsDemo" */ = {
+		3D3257331CA33D0D004A2A29 /* Build configuration list for PBXProject "SpringTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D32575E1CA33D0D004A2A29 /* Debug */,
@@ -479,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D3257601CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemo" */ = {
+		3D3257601CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "SpringTransition" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D3257611CA33D0D004A2A29 /* Debug */,
@@ -488,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D3257631CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemoTests" */ = {
+		3D3257631CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "SpringTransitionTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D3257641CA33D0D004A2A29 /* Debug */,
@@ -497,7 +498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3D3257661CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "DynamicsDemoUITests" */ = {
+		3D3257661CA33D0D004A2A29 /* Build configuration list for PBXNativeTarget "SpringTransitionUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3D3257671CA33D0D004A2A29 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3D3257371CA33D0D004A2A29"
-               BuildableName = "DynamicsDemo.app"
-               BlueprintName = "DynamicsDemo"
-               ReferencedContainer = "container:DynamicsDemo.xcodeproj">
+               BuildableName = "SpringTransition.app"
+               BlueprintName = "SpringTransition"
+               ReferencedContainer = "container:SpringTransition.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3D32574B1CA33D0D004A2A29"
-               BuildableName = "DynamicsDemoTests.xctest"
-               BlueprintName = "DynamicsDemoTests"
-               ReferencedContainer = "container:DynamicsDemo.xcodeproj">
+               BuildableName = "SpringTransition.xctest"
+               BlueprintName = "SpringTransitionTests"
+               ReferencedContainer = "container:SpringTransition.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3D3257561CA33D0D004A2A29"
-               BuildableName = "DynamicsDemoUITests.xctest"
-               BlueprintName = "DynamicsDemoUITests"
-               ReferencedContainer = "container:DynamicsDemo.xcodeproj">
+               BuildableName = "SpringTransition.xctest"
+               BlueprintName = "SpringTransitionUITests"
+               ReferencedContainer = "container:SpringTransition.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D3257371CA33D0D004A2A29"
-            BuildableName = "DynamicsDemo.app"
-            BlueprintName = "DynamicsDemo"
-            ReferencedContainer = "container:DynamicsDemo.xcodeproj">
+            BuildableName = "SpringTransition.app"
+            BlueprintName = "SpringTransition"
+            ReferencedContainer = "container:SpringTransition.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D3257371CA33D0D004A2A29"
-            BuildableName = "DynamicsDemo.app"
-            BlueprintName = "DynamicsDemo"
-            ReferencedContainer = "container:DynamicsDemo.xcodeproj">
+            BuildableName = "SpringTransition.app"
+            BlueprintName = "SpringTransition"
+            ReferencedContainer = "container:SpringTransition.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3D3257371CA33D0D004A2A29"
-            BuildableName = "DynamicsDemo.app"
-            BlueprintName = "DynamicsDemo"
-            ReferencedContainer = "container:DynamicsDemo.xcodeproj">
+            BuildableName = "SpringTransition.app"
+            BlueprintName = "SpringTransition"
+            ReferencedContainer = "container:SpringTransition.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
